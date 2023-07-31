@@ -1,0 +1,42 @@
+*{
+    background-color: brown;
+    margin: 0;
+}
+
+header,h1{
+    background-color: rgb(44, 38, 38);
+    padding: 15px;
+}
+
+#section,
+#section2,
+#section3,
+#section4{
+    width:20%;
+    height: 600px;
+    padding: 20px;
+    justify-content: center;
+    margin: 0;
+    float: left;
+}
+#section {
+    background-color: orange;
+}
+#section2 {
+    background-color: blue;
+}
+#section3 {
+    background-color: black;
+}
+#section4 {
+    background-color: green;
+}
+p{
+    background-color: orange;
+}
+.before{
+    width:20%;
+}
+.dimentions{
+    width:100%;
+}
