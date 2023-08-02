@@ -1,5 +1,4 @@
 *{
-    background-color: brown;
     margin: 0;
 }
 
@@ -12,7 +11,7 @@ h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     margin-top: 10px;
-    transition: margin-right 1s, margin-left 1s, font-size 1s;
+    transition: margin-right 1s, margin-left 1s, font-size 0.5s, color 0.5s;
     transition-timing-function:ease-in-out;
 }
 h2:hover{
@@ -21,7 +20,6 @@ h2:hover{
     margin-top: 10px;
     margin-right:15px;
     margin-left:15px;
-    font-size: 220%;
 }
 
 .row {
@@ -36,7 +34,7 @@ h2:hover{
 #section2,
 #section3,
 #section4{
-    height: 600px;
+    height: 1000px;
     padding: 20px;
     justify-content: center;
     margin: 0;
@@ -77,23 +75,21 @@ h2:hover{
     flex-grow: 3;
 }
 p{
+    text-align: center;
+    max-width: 400px;
     margin-top: 50px;
+    margin-left: 80px;
     font-weight: 600;
-    transition: margin-right 0.5s, margin-left 0.5s, font-weight 0.5s;
-    transition-timing-function:ease-in-out;
+    transition: font-weight 1s, font-size 2s, opacity 1s;
+    transition-timing-function: ease-in-out;
 }
 p:hover{
-    font-size: 110%;
-    font-weight: 500;
-    margin-top: 50px;
     font-weight: 800;
-    margin-right:10px;
-    margin-left:10px;
 }
 
 /*----------------------------------------*/
 
-#SandDollar{
+.imgshell{
     display: block;
     margin-left: auto;
     margin-right: auto;
