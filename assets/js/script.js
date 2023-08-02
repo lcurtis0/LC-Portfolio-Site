@@ -4,6 +4,7 @@ const newText = document.getElementById("newText");
 const addArea = document.getElementById("addArea");
 const newText2 = document.getElementById("newText2");
 const newText3 = document.getElementById("newText3");
+const newText4 = document.getElementById("newText4");
 
 const Resumelink = document.getElementById("Resumelink");
 
@@ -19,6 +20,7 @@ const About = document.getElementById("About");
 
 const imgSandDollar = document.getElementById("SandDollar");
 const shellOne = document.getElementById("shell-1");
+const shellTwo = document.getElementById("shell-2");
 
 let Horizon = document.createElement('img');
 let passwordGenerator = document.createElement('img');
@@ -88,18 +90,22 @@ function mouseEnter2() {
     newText2.textContent = "Hello this is a paragraph Hello this is a paragraph Hello this is a paragraph Hello this is a paragraph";
     shellOne.style.width = "200px";
     Resume.style.fontSize= "220%";
+    newText2.style.fontSize = "20px";
+    newText2.style.opacity = "1";
 
-    Resumeimg.src = "./assets/images/sanddollar.png";
+    Resumeimg.src = "./assets/images/Screenshot (156).png";
     Resumeimg.style.border = "1px solid";
-    Resumeimg.style.borderRadius = "10px";
+    Resumeimg.style.borderRadius = "5px";
     Resumelink.appendChild(Resumeimg);
-    Resumeimg.style.width = "150px";
+    Resumeimg.style.width = "200px";
   }
 
   function mouseLeave2() {
     Resume.style.fontSize = "150%";
     shellOne.style.width = "150px";
     newText2.textContent = "";
+    newText2.style.fontSize = "2px";
+    newText2.style.opacity = "0";
 
     Resumeimg.src = "";
     Resumeimg.style.width = "0px";
@@ -112,13 +118,36 @@ function mouseEnter2() {
   document.getElementById("section3").addEventListener("mouseenter", mouseEnter3);
 document.getElementById("section3").addEventListener("mouseleave", mouseLeave3);
 
-function mouseEnter3() {
-    document.getElementById("section3").style.color = "blue";
+const Firstname = document.createElement('input');
 
+function mouseEnter3() {
+    newText3.textContent = "This is the contact area. Fill out the information ";
+    shellTwo.style.width = "200px";
+    Contact.style.fontSize= "220%";
+    newText3.style.fontSize = "20px";
+    newText3.style.opacity = "1";
+
+    const github = document.createElement('p');
+    github.textContent = "https://github.com/lcurtis0";
+
+    const email = document.createElement('p');
+    email.textContent = "lmcurtis222@gmail.com";
+
+    
+
+    Firstname.placeholder = "Enter First Name"
+    document.getElementById('firstName').style.opacity = "1";
+    document.getElementById('firstName').appendChild(Firstname);
   }
 
   function mouseLeave3() {
-    document.getElementById("section3").style.color = "black";
+    Contact.style.fontSize = "150%";
+    shellTwo.style.width = "150px";
+    newText3.textContent = "";
+    newText3.style.fontSize = "2px";
+    newText3.style.opacity = "0";
+
+    document.getElementById('firstName').style.opacity = "0";
 
   }
 

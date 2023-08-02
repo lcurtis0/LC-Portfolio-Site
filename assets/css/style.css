@@ -93,3 +93,10 @@ p:hover{
     transition: width 0.5s;
     transition-timing-function:cubic-bezier(.93,.45,.53,1.21);
 }
+
+.Resumeclass{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
