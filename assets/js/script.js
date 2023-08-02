@@ -2,9 +2,10 @@
 const newText = document.getElementById("newText");
 
 const addArea = document.getElementById("addArea");
-
 const newText2 = document.getElementById("newText2");
 const newText3 = document.getElementById("newText3");
+
+const Resumelink = document.getElementById("Resumelink");
 
 const section =  document.getElementById("section");
 const section2 =  document.getElementById("section2");
@@ -19,6 +20,12 @@ const About = document.getElementById("About");
 const imgSandDollar = document.getElementById("SandDollar");
 const shellOne = document.getElementById("shell-1");
 
+let Horizon = document.createElement('img');
+let passwordGenerator = document.createElement('img');
+let ultimateTest = document.createElement('img');
+
+let Resumeimg = document.createElement('img');
+
 /*-------------------------------------------------*/
 
 
@@ -32,7 +39,24 @@ function mouseEnter() {
     newText.style.fontSize = "20px";
     newText.style.opacity = "1";
 
-    addArea.innerHTML = "<a><id=""img src=./assets/images/sanddollar.png></a>"
+    Horizon.src = "./assets/images/sanddollar.png";
+    Horizon.style.border = "1px solid";
+    Horizon.style.borderRadius = "10px";
+    addArea.appendChild(Horizon);
+    Horizon.style.width = "100px";
+  
+    passwordGenerator.src = "./assets/images/coral.png";
+    passwordGenerator.style.border = "1px solid";
+    passwordGenerator.style.borderRadius = "10px";
+    addArea2.appendChild(passwordGenerator);
+    passwordGenerator.style.width = "100px";
+
+    ultimateTest.src = "./assets/images/coral.png";
+    ultimateTest.style.border = "1px solid";
+    ultimateTest.style.borderRadius = "10px";
+    addArea3.appendChild(ultimateTest);
+    ultimateTest.style.width = "100px";
+
   }
 
   function mouseLeave() {
@@ -41,6 +65,19 @@ function mouseEnter() {
     newText.textContent = "";
     newText.style.fontSize = "2px";
     newText.style.opacity = "0";
+
+    Horizon.src = "";
+    Horizon.style.width = "0px";
+    Horizon.style.border = "0px none";
+
+    passwordGenerator.src = "";
+    passwordGenerator.style.width = "0px";
+    passwordGenerator.style.border = "0px none";
+
+    ultimateTest.src = "";
+    ultimateTest.style.width = "0px";
+    ultimateTest.style.border = "0px none";
+
   }
 /*-------------------------------------------------*/
 
@@ -52,12 +89,21 @@ function mouseEnter2() {
     shellOne.style.width = "200px";
     Resume.style.fontSize= "220%";
 
+    Resumeimg.src = "./assets/images/sanddollar.png";
+    Resumeimg.style.border = "1px solid";
+    Resumeimg.style.borderRadius = "10px";
+    Resumelink.appendChild(Resumeimg);
+    Resumeimg.style.width = "150px";
   }
 
   function mouseLeave2() {
     Resume.style.fontSize = "150%";
     shellOne.style.width = "150px";
     newText2.textContent = "";
+
+    Resumeimg.src = "";
+    Resumeimg.style.width = "0px";
+    Resumeimg.style.border = "0px none";
 
   }
 

@@ -1,11 +1,15 @@
 
 Bootstrap or CSS framework
 
-sections with js hover
+sections with js hover - 
 
 unique fonts for headers and paragraphs
 
 images for textures 
 
 email contact
+
+In Script.js shorten the variable list by reassigning the values in the functions
+
+Link all projects
 
