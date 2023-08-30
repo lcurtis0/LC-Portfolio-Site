@@ -1,27 +1,22 @@
 *{
-    background-color: brown;
     margin: 0;
 }
 
 header,h1{
     background-color: rgb(44, 38, 38);
-    padding: 15px;
+    padding: 30px;
 }
 
 h2{
+    padding:40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    margin-top: 10px;
-    transition: margin-right 1s, margin-left 1s, font-size 1s;
-    transition-timing-function:ease-in-out;
+    transition: font-size 0.75s, color 0.5s;
+    transition-timing-function:cubic-bezier(.93,.45,.53,1.21);
 }
 h2:hover{
     color:azure;
     text-align: center;
-    margin-top: 10px;
-    margin-right:15px;
-    margin-left:15px;
-    font-size: 220%;
 }
 
 .row {
@@ -36,8 +31,7 @@ h2:hover{
 #section2,
 #section3,
 #section4{
-    height: 600px;
-    padding: 20px;
+    height: 900px;
     justify-content: center;
     margin: 0;
     transition: flex-grow 0.75s, background-color 1.5s;
@@ -46,7 +40,7 @@ h2:hover{
 
 #section {
     background-color: #e66b32;
-    flex-grow: 1;
+    flex-grow: 0.5;
 }
 #section:hover {
     background-color: #f16829;
@@ -54,7 +48,7 @@ h2:hover{
 }
 #section2 {
     background-color: #16497c;
-    flex-grow: 1;
+    flex-grow: 0.5;
 }
 #section2:hover {
     background-color: #0E3D6C;
@@ -62,7 +56,7 @@ h2:hover{
 }
 #section3 {
     background-color: rgb(61, 49, 49);
-    flex-grow: 1;
+    flex-grow: 0.5;
 }
 #section3:hover {
     background-color: rgb(56, 44, 44);
@@ -70,34 +64,39 @@ h2:hover{
 }
 #section4 {
     background-color: rgb(51, 100, 51);
-    flex-grow: 1;
+    flex-grow: 0.5;
 }
 #section4:hover {
     background-color: rgb(50, 113, 50);
     flex-grow: 3;
 }
 p{
+    text-align: center;
+    max-width: 400px;
     margin-top: 50px;
+    margin-left: 120px;
     font-weight: 600;
-    transition: margin-right 0.5s, margin-left 0.5s, font-weight 0.5s;
-    transition-timing-function:ease-in-out;
+    transition: font-weight 1s, font-size 2s, opacity 1s;
+    transition-timing-function: ease-in-out;
 }
 p:hover{
-    font-size: 110%;
-    font-weight: 500;
-    margin-top: 50px;
     font-weight: 800;
-    margin-right:10px;
-    margin-left:10px;
 }
 
 /*----------------------------------------*/
 
-#SandDollar{
+.imgshell{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 150px;
     transition: width 0.5s;
-    transition-timing-function:ease-in-out;
+    transition-timing-function:cubic-bezier(.93,.45,.53,1.21);
+}
+
+.Resumeclass{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
 }
