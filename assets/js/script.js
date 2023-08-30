@@ -119,6 +119,12 @@ function mouseEnter2() {
 document.getElementById("section3").addEventListener("mouseleave", mouseLeave3);
 
 const Firstname = document.createElement('input');
+const Lastname = document.createElement('input');
+
+const github = document.createElement('p');
+const email = document.createElement('p');
+
+const contactForm = document.getElementById('contactForm')
 
 function mouseEnter3() {
     newText3.textContent = "This is the contact area. Fill out the information ";
@@ -127,17 +133,21 @@ function mouseEnter3() {
     newText3.style.fontSize = "20px";
     newText3.style.opacity = "1";
 
-    const github = document.createElement('p');
     github.textContent = "https://github.com/lcurtis0";
+    contactForm.appendChild(github);
 
-    const email = document.createElement('p');
     email.textContent = "lmcurtis222@gmail.com";
-
+    contactForm.appendChild(email);
     
 
     Firstname.placeholder = "Enter First Name"
     document.getElementById('firstName').style.opacity = "1";
     document.getElementById('firstName').appendChild(Firstname);
+
+    Lastname.placeholder = "Enter Last Name"
+    document.getElementById('lastname').style.opacity = "1";
+    document.getElementById('lastname').appendChild(Lastname);
+
   }
 
   function mouseLeave3() {
@@ -148,6 +158,11 @@ function mouseEnter3() {
     newText3.style.opacity = "0";
 
     document.getElementById('firstName').style.opacity = "0";
+
+    document.getElementById('lastName').style.opacity = "0";
+    
+    github.textContent = "";
+    email.textContent = "";
 
   }
 
